@@ -11,6 +11,12 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  font-size: 14px;
+}
+
+
+
 .f-c-c {
   display: flex;
   justify-content: center;
@@ -20,5 +26,11 @@ html {
 .f-sb-c {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.f-s-c {
+  display: flex;
+  justify-content: start;
   align-items: center;
 }
