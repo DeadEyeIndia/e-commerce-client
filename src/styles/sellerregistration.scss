@@ -1,0 +1,173 @@
+@import "./variables.scss";
+
+.app__seller {
+    width: 100%;
+}
+
+.app__seller-logo {
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.9375rem;
+    border-bottom: 1px solid $borderColor;
+}
+
+.app__seller-logo > img {
+    width: 150px;
+}
+
+.app__seller-form {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.app__seller-form > form {
+    padding: 0 1.25rem;
+}
+
+.app__seller-form > form > h1 {
+    font-size: 1.25rem;
+    color: $primaryBackground;
+}
+
+.app__seller-businessname {
+    margin-top: 1.25rem;
+}
+
+.app__seller-businessname > h2 {
+    font-size: 0.875rem;
+}
+
+.app__seller-businessname > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.app__seller-businessname > div > input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 0 0.75rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.app__seller-businessname > div > div {
+    width: 100%;
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app__seller-businessname > div > div > button {
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    
+    outline: none;
+    border: none;
+}
+
+.showButton {
+    background: $borderColor;
+}
+
+.hideButton {
+    background: $primaryBackground;
+}
+
+.app__seller-category {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.app__category-customBox {
+    width: auto;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    position: relative;
+    top: 0;
+    float: left;
+    overflow: hidden;
+    border: 1px solid ;
+    border-radius: 0.375rem;
+}
+
+.app__category-customBox > span {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8125rem;
+    margin-right: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.app__seller-category > select {
+    width: 91%;
+    height: 30px;
+    position: absolute;
+    top: 270px;
+    visibility: visible;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.app__seller-description {
+    margin-top: 1.25rem;
+}
+
+.app__seller-description > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.description > label {
+    margin-bottom: 0.425rem;
+}
+
+.description > textarea {
+    height: auto;
+    min-height: 100px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.about {
+    margin-top: 1.25rem;
+}
+
+.about > label {
+    margin-bottom: 0.425rem;
+}
+
+.about > input {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.app__seller-submit {
+    width: 100%;
+    height: 35px;
+    margin-top: 1.25rem;
+}
+
+.app__seller-submit > button {
+    width: 100%;
+    height: 100%;
+    background-color: $primaryBackground;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+}

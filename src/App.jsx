@@ -6,6 +6,7 @@ import SiginPage from "./pages/SigninPage";
 import SignupPage from "./pages/SignupPage";
 import { loadUser } from "./features/auth/authAction";
 import { store } from "./store";
+import SellerRegisterationPage from "./pages/SellerRegisterationPage";
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,10 @@ const App = () => {
         <Route path="/" element={<Mainpage />} />
         <Route path="/signin" element={<SiginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route
+          path="/seller/registration"
+          element={<SellerRegisterationPage />}
+        />
       </Routes>
     </>
   );
