@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+.app__signup {
+    width: 100vw;
+    height: auto;
+  flex-direction: column;
+}
+
+.app__signup-form {
+  flex-direction: column;
+}
+
+.app__signup-form > h1 {
+  margin-bottom: 2rem;
+}
+
+.app__signup-innerform > div {
+  width: 18.75rem;
+  margin: 0.75rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__signup-innerform > div > label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.app__signup-innerform > div > input {
+  height: 3.125rem;
+  font-size: 1rem;
+  border: 1px solid $blackColor;
+  border-radius: 6px;
+  padding: 0 0.5rem;
+}
+
+.app__signup-innerform > div:last-child > input {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: $primaryBackground;
+  outline: none;
+  border: none;
+  margin-top: 0.65rem
+}
+
+.app__signup-alreadyuser {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5rem;
+}
+
+.app__signup-alreadyuser > a {
+    font-size: 15px;
+    font-weight: 600;
+    color: $blackColor;
+}

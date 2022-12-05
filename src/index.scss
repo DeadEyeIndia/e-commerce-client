@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 14px;
+}
+
+
+
+.f-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-s-c {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}

@@ -1,0 +1,82 @@
+@import './variables.scss';
+
+.app__signin {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+}
+
+.app__logo-image {
+    height: 5rem;
+    width: 14rem;
+    margin: 4rem 0 2rem 0; 
+}
+
+.app__logo-image > img {
+    height: 100%;
+    width: 100%;
+}
+
+.app__signin-form {
+    flex-direction: column;
+}
+
+.app__signin-form > h1 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+}
+
+.app__signin-innerform > div {
+    margin: 2rem 0;
+    
+}
+
+.app__sigin-input_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__sigin-input_container > label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.app__sigin-input_container > input {
+    width: 18.75rem;
+    height: 3.125rem;
+    font-size: 1rem;
+    border: 1px solid $blackColor;
+    border-radius: 6px;
+    padding: 0 0.5rem;
+}
+
+.app__signin-innerform > div:last-child > input {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: $primaryBackground;
+    outline: none;
+    border: none;
+}
+
+.app__signin-forgot_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 8rem;
+    
+}
+
+.app__signin-forgot_signup > span {
+    margin: 0.25rem 0;
+    text-decoration: underline;
+}
+
+.app__signin-forgot_signup > a {
+    
+    margin: 0.25rem 0;
+    color: $blackColor;
+    text-decoration: underline;
+}
+
