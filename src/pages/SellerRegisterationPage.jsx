@@ -1,11 +1,18 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
+import { newSeller } from "../features/seller/sellerActions";
 import SellerLogo from "../assets/E Com Seller Logo.svg";
 import "../styles/sellerregistration.scss";
 
 const SellerRegisterationPage = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { loading, success, error } = useSelector((state) => state.seller);
+
   const [businessName, setBusinessName] = useState("");
   const [category, setCategory] = useState("Select your selling category");
   const [description, setDescription] = useState("");
@@ -49,14 +56,14 @@ const SellerRegisterationPage = () => {
   const handleSellerRegistration = (e) => {
     e.preventDefault();
 
-    const myForm = {
-      buinessname: businessName,
+    const sellerData = {
+      businessname: businessName,
       category: category,
       description: description,
       about: about,
     };
 
-    console.log(myForm);
+    dispatch(newSeller(sellerData));
   };
 
   useEffect(() => {
@@ -67,6 +74,16 @@ const SellerRegisterationPage = () => {
     }
   }, [businessName]);
 
+  useEffect(() => {
+    if (error) {
+      console.log(error);
+    }
+
+    if (success) {
+      navigate("/");
+    }
+  }, [error, success, navigate]);
+
   return (
     <>
       <div className="app__seller">
@@ -76,10 +93,6 @@ const SellerRegisterationPage = () => {
         <div className="app__seller-form">
           <form onSubmit={handleSellerRegistration}>
             <h1>Register and Start Selling</h1>
-
-            {/* <p>
-              Please ensure that all the information you submit is accurate.
-            </p> */}
 
             <div className="app__seller-businessname">
               <h2>Enter details below to continue registration:</h2>

@@ -75,6 +75,8 @@
 }
 
 .app__header-searchbox {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     border: 1px solid;
@@ -102,8 +104,9 @@
 }
 
 .app__header-searchboxInner > input[type=text] {
-    width: 240px;
+    width: 100%;
     height: 100%;
+    flex-grow: 1;
     border: none;
     outline: none;
     font-size: 0.9375rem;
@@ -112,4 +115,145 @@
 .app__cartIcon {
     width: 40px;
     height: 40px;
+}
+
+
+// Navbar styles
+.app__navbar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.app__navbar-left {
+    width: 70%;
+    height: 100%;
+}
+
+.app__navbar-right {
+    width: 30%;
+    height: 100%;
+    background-color: $borderColor;
+    display: flex;
+    justify-content: center;
+}
+
+.app__navbar-right > div {
+    width: 30px;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.app__navbar-right > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app-show {
+    display: flex;
+}
+
+.app-hide {
+    display: none;
+}
+
+.app__navbar-logo {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.app__navbar-logo > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.app__navbar-body > a {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    border-top: 4px solid $borderColor;
+    border-bottom: 4px solid $borderColor;
+    padding: 30px 20px;
+}
+
+.app__navbar-body > a > span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.app__navbar-body > a > span:last-child {
+    width: 30px;
+    height: 30px;
+}
+
+.app__navbar-body > a > span:last-child > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__navbar-categoryList {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 4px solid $borderColor;
+}
+
+.app__navbar-categoryList > h2 {
+    padding: 15px 0;
+}
+
+.app__navbar-category {
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.app__navbar-trendingList {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__navbar-trendingList > h2 {
+    padding: 15px 0;
+}
+
+.app__navbar-trending {
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.app__navbar-account {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-top: 4px solid $borderColor;
+}
+
+.app__navbar-account > h2 {
+    padding-bottom: 10px;
+}
+
+.app__navbar-account > a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
 }

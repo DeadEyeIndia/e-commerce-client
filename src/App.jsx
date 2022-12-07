@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Mainpage from "./pages/Mainpage";
 import SiginPage from "./pages/SigninPage";
 import SignupPage from "./pages/SignupPage";
-import { loadUser } from "./features/auth/authAction";
+import { loadUser } from "./features/auth/authActions";
 import { store } from "./store";
 import SellerRegisterationPage from "./pages/SellerRegisterationPage";
 

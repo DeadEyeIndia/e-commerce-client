@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { signIn } from "../features/auth/authAction";
+import { signIn } from "../features/auth/authActions";
 import "../styles/signin.scss";
 import Logo from "../assets/Logo.svg";
 
